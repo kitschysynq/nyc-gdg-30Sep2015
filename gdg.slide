@@ -1,0 +1,190 @@
+Introduction to Go
+30 Sep 2015
+Tags: go golang 
+
+Sean Swehla
+Senior Software Engineer
+thor@digitalocean.com
+@kitschysynq
+
+* A Brief Timeline
+
+* In The Beginning
+
+"Robert Griesemer, Rob Pike and Ken Thompson started sketching the goals for a new language on the white board on September 21, 2007."
+
+.link https://golang.org/doc/faq#history
+
+* Shortly After the Beginning
+
+By 2009, the Go userbase had exploded
+
+.image imgs/upandtotheright.jpg
+
+* Shortly After the Beginning
+
+By 2009, the Go userbase had exploded
+to a whopping 3-10 people
+
+.image imgs/upandtotheright.jpg
+
+* Shortly After the Beginning
+
+By 2009, the Go userbase had exploded
+to a whopping 3-10 people
+inside Google
+
+.image imgs/upandtotheright.jpg
+.link https://github.com/golang/talks/blob/master/2014/state-of-the-gopher.slide#L27 Source: Brad Fitzpatrick - GopherCon 2014
+
+* Open Sourced
+
+- Announced 11 November 2009
+- Full team also included Ian Taylor, Russ Cox, Jini Kim, and Adam Langley
+
+* And now-ish...
+
+TONS of users (I weighed them)
+
+.image imgs/gousers.png
+.caption https://github.com/golang/go/wiki/GoUsers
+
+* What Makes It Special
+
+* According to Ken Thompson
+
+"When the three of us got started, it was pure research. The three of us got together and decided that we hated C++.  ...  we started off with the idea that all three of us had to be talked into every feature in the language, so there was no extraneous garbage put into the language for any reason."
+
+.link http://www.drdobbs.com/open-source/interview-with-ken-thompson/229502480 Dr Dobb's Interview with Ken Thompson
+
+* Design Philosophy
+
+Actually, hold on a minute...
+
+* A Warning
+
+There is nothing NEW in Go.
+
+* Design Philosophy
+
+- Simplicity, safety, and readability are paramount.
+- TMTOWTDI is BADBADDY
+- Things of interest should be easy; even if that means not everything is possible.
+
+.link http://talks.golang.org/2015/gophercon-goevolution.slide#6 Adapted from: Robert Griesemer - GopherCon 2015
+
+* Influences
+
+- C: statement and expression syntax 
+- Pascal: declaration syntax 
+- Modula 2, Oberon 2: packages 
+- CSP, Occam, Newsqueak, Limbo, Alef: concurrency 
+- BCPL: the semicolon rule 
+- Smalltalk: methods 
+- Newsqueak: <-, := 
+- APL: iota
+
+.link http://talks.golang.org/2014/hellogophers.slide#21 Source: Rob Pike - GopherCon 2014
+
+* Concurrency
+
+- Communicating Sequential Processes (Tony Hoare)
+- NOT parallelism
+
+* Features
+
+- static typing
+- garbage collection
+- interfaces & duck typing
+- type inference
+- fast compiler
+- goroutines
+- channels
+
+* Some Examples
+
+* Hello Woild
+
+.play code/hello.go
+
+* A Web Server
+
+.play code/web.go
+
+* Concurrency
+
+.play code/conc.go
+
+* Channels
+
+.code code/chan.go /START OMIT/,/END OMIT/
+.caption https://golang.org/doc/effective_go.html#channels
+
+* The Ecosystem
+
+* The Tools
+
+- run
+- get
+- test
+
+* The Tools (maintainability)
+
+- generate
+- fix
+- rename
+
+* The Tools (readability)
+
+- lint
+- vet
+- fmt
+- godoc
+
+* The Tools (understandability)
+
+- pprof
+- oracle
+- callgraph
+
+* The Tools (convenience)
+
+- goreturns
+- goimports
+
+* Other Compilers
+
+- gccgo
+- llgo
+- TARDIS Go
+- GopherJS
+
+* The Community
+
+- golang-nuts
+- Go Forum
+- Gophers Slack
+
+* Projects
+
+- Docker
+- CoreOS, etcd, fleet
+- Juju
+- NATS, gnatsd, Packer, Heka
+- dl.google.com, Vitess, Kubernetes
+- App Engine
+
+.link http://talks.golang.org/2014/state-of-the-gopher.slide#26 Source: Brad Fitzpatrick - GopherCon 2014
+
+* Getting Started
+
+- Go Tour http://tour.golang.org
+- golang book https://www.golang-book.com/books/intro
+- Golang for Python Programmers http://golang-for-python-programmers.readthedocs.org/en/latest/intro.html
+- A Beginner's Introduction to Go http://www.cs.umanitoba.ca/~bate/BIG/BIG.contents.html
+
+* Other Resources
+
+- Go Programming Language Resources http://go-lang.cat-v.org/
+- Go Playground http://play.golang.org
+- awesome-go - A curated list of awesome Go frameworks, libraries and software
